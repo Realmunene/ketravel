@@ -1,18 +1,24 @@
+import React from 'react';
+import { Routes, Route} from "react-router-dom"
 import '../App.css';
-import ActivitiesCard from './ActivitiesCard';
-import DestinationCard from './DestinationCard';
 import Home from "./Home";
-import HotelCard from './HotelCard';
+import Login from './Login';
+import NavBar from './NavBar';
 import AboutSection from './AboutSection';
+import FooterSection from './FooterSection';
+
 
 function App() {
+
   return (
     <div className="App">
-       <Home/>
-       <DestinationCard/>
-       <ActivitiesCard/>
-       <HotelCard/>
-       <AboutSection/>
+      <NavBar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<AboutSection/>}/>
+        <Route path='/login' element={<Login/>}/>
+      </Routes>
+       <FooterSection/>
     </div>
   );
 }

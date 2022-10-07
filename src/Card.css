@@ -1,0 +1,86 @@
+.applyPack{
+    background-image: url(./images/mobile_wallpaper18-345.jpg);
+    padding: 40px 30px;
+}
+.Choices{
+    background-color: maroon;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 0 4px;
+}
+.Choices input{
+    margin: 0 2px;
+}
+.Card-container{
+width: 21%;
+color: brown;
+margin: 0px 10px;
+background-color: gray;
+border-radius: 15px;
+}
+.image-container{
+    background-image: url(./images/mobile_wallpaper18-345.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 40px 0px;
+    font-size: 12px;
+    color: white;
+}
+.row{
+    display: flex;
+    font-size: 13px;
+    
+}
+.words{
+    text-align: left;
+   
+}
+span{
+    font-size: 9px;
+}
+.vertical {
+    border-left: 1px solid white;
+    height: 110px;
+  }
+.footerSec{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: maroon;
+    color: white;
+    padding: 1% 10%;
+    margin-top: 2%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.socialIcon{
+    display: flex;
+}
+.socialIcon p{
+    margin: 0 4px;
+}
+.border1 a{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 2px;
+
+}
+.listing ol li{
+    text-align: left;
+    list-style-type: none;
+}
+.listingA ol{
+    display: flex;
+    justify-content: space-between;
+}
+.listingA ol li{
+    text-align: left;
+    list-style-type: none;
+    background-color: white;
+    border-radius: 3px;
+    padding: 4px;
+    margin: 2px;
+}
+
