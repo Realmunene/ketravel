@@ -1,6 +1,44 @@
 .applyPack{
-    background-image: url(./images/mobile_wallpaper18-345.jpg);
-    padding: 40px 30px;
+    background-image: url("https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9jdXN8ZW58MHx8MHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 12% 7%;
+    height:100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.aboutinfo{
+    background-image: url("https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9jdXN8ZW58MHx8MHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 9% 19%;
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.loginsignin{
+    background-image: url("https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9jdXN8ZW58MHx8MHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10% 19%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;  
+}
+..loginsignin form{
+    background-color: lightcoral;
+}
+.aboutinfo p{
+    padding: 5% 7%;
+    margin: 0 2%;
+    color: white;
+    background-color: maroon;
+    border-radius: 20px;
+
 }
 .Choices{
     background-color: maroon;
@@ -18,10 +56,43 @@ margin: 0px 10px;
 background-color: gray;
 border-radius: 15px;
 }
-.image-container{
-    background-image: url(./images/mobile_wallpaper18-345.jpg);
+.purpose{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 15%;
+    background-color: grey;
+    border-radius: 15px;
+    margin: 1% 2%;
+    text-align: left;
+}
+.onea{
+    background-image: url(./images/onea.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 15px;
+    padding: 40px 0px;
+    font-size: 12px;
+    color: white;
+}
+.oneb{
+    background-image: url(./images/backg.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 40px 0px;
+    font-size: 12px;
+    color: white;
+}
+.two{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 4%;
+}
+.image-container1{
+    background-color: maroon;
     border-radius: 15px;
     padding: 40px 0px;
     font-size: 12px;
@@ -50,7 +121,7 @@ span{
     background-color: maroon;
     color: white;
     padding: 1% 10%;
-    margin-top: 2%;
+    margin-top: 0%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -65,7 +136,6 @@ span{
     border-radius: 3px;
     padding: 4px;
     margin: 2px;
-
 }
 .listing ol li{
     text-align: left;
@@ -83,4 +153,34 @@ span{
     padding: 4px;
     margin: 2px;
 }
-
+.rowMain{
+    display: flex;
+}
+.applyPack1{
+    background-image: url("https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9jdXN8ZW58MHx8MHx8&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 10% 19%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.sidebyside{
+    background-color: brown;
+    border-radius: 15px;
+    width: 70%;
+    margin: 7% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact{
+    width: 25%;
+    color: white;
+    margin: 0 35%;
+    text-align: left;
+    padding: 2%;
+    
+    
+}

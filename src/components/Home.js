@@ -1,40 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import '../Card.css';
-import ActivitiesCard from './ActivitiesCard';
-import DestinationCard from './DestinationCard';
-import HotelCard from './HotelCard';
+
 function Home(){
-    const itemList = [
-        "Nairobi",
-        "Kisumu",
-        "Mombase",
-        "Eldoret",
-        "Kilifi",
-        "Taita Taveta",
-    ]
-    const liDisplay = itemList.map((list)=>{
-        return <li><a href="#">{list}</a></li>;
-    })
+    const [date, setDate] = useState();
+    const [value, setValue]=useState("")
+    const [ cardTrip,  setcardTrip] = useState([]);
+    useEffect(() => {
+      fetch("http://localhost:3000/CardPackage")
+        .then((response) => response.json())
+        .then((data) => {
+            setcardTrip(cardTrip);
+            
+        });
+    }, []); 
+    // for testing whether the get request has some data and was successfull in fetching
+console.log(cardTrip);
     return (
         <div className="general">
-        <div className="applyPack">
-            <h3>Explore and experience.</h3>
+            <div className="applyPack">
+                <h3>Explore and experience.</h3>
             <div className="Choices">
                 <input type="text" placeholder="Going to.."/>
-                <input type="text"/>
-                <input type="text"/>
-                <input type="text" placeholder="Going to.."/>
-                <input type="button"/>
+                <input type="date" onChange={e=> setDate(e.target.value)}/>
+                <input type="date" onChange={e=> setDate(e.target.value)}/>
+                <input list='data' onChange={(e)=>setValue(e.target.value)} placeholder='Guest,Room' />
+                <input type="submit"/>
+            
             </div>
+            {/* link that are supposed to change the components */}
             <div className="listingA">
-            <ol>
-                {liDisplay}
-            </ol>
+                <ol>
+                <li><a to="/" element={<Home/>}>Things To do</a></li>
+                <li><a href="#">Place To visit</a></li>
+                <li><a href="#">Hotels available</a></li>
+                <li><a href="#">Holiday Packages</a></li>
+                <li><a href="#">Regular Packages</a></li>
+                <li><a href="#">Create Package</a></li>
+                </ol>
             </div>
         </div>
-            <DestinationCard/>
-            <ActivitiesCard/>
-            <HotelCard/>
         </div>
     )
 }

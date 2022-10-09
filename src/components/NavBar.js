@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
+// a variable to store the css style internally
 const linkStyles = {
   display: "inline-block",
   padding: "4px 13px",
@@ -15,14 +15,14 @@ function NavBar() {
   return (
     <div>
         <NavLink
-        to="/about"
+        to="/ourPackage"
         exact
         style={linkStyles}
         activeStyle={{
           background: "maroon",
         }}
       >
-        <img src="./images/mobile_wallpaper18-345.jpg" alt=""/>
+        KeTravel.
       </NavLink>
           <NavLink
         to="/"
@@ -44,12 +44,12 @@ function NavBar() {
       >
         About
           </NavLink>
-          <NavLink
-        to="/contact us"
+        <NavLink
+        to="/contactus"
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "Maroon",
         }}
       >
         Contact Us
@@ -59,7 +59,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "Maroon",
         }}
       >
         Login/Signup

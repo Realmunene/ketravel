@@ -1,27 +1,40 @@
+import React,{useState, useEffect} from 'react';
 import '../Card.css'
+import ActivitiesCard from './ActivitiesCard';
 function DestinationCard(){
-    return(
-        <div className="Cards">
-            <h3>Top Deals</h3>
-            <div className="Card-container">
-                <div className='image-container'>
-                    <p>@ 2 Days, 1 Night at weslands hotel (Single room rate)</p>
+    const [ cardTrip,  setcardTrip] = useState([]);
+    useEffect(() => {
+      fetch("http://localhost:3000/CardPackage")
+        .then((response) => response.json())
+        .then((data) => {
+                setcardTrip(data);
+        });
+    }, []); 
+    // the fetch request to get, convert the json date to object that can be used to make the card dynamic
+return(
+    <div>
+        <div className='purpose'>
+            {/* we used map method to dynamicaly create cards in relation to the data available */}
+            {cardTrip.map((identities)=>(
+                <div className='card'>
+                <div className='onea'>
+                    <p>{identities.description}</p>
                 </div>
-                <div className='row'>
-                <div className="words">
-                    <span>From</span>
-                    <h3>KES 20, 000</h3>
-                    <div className="town">
-                        <img/>
-                        <cite>Nairobi</cite>
+                <div className='two'>
+                    <div>
+                        <p>From</p>
+                        <h3>{identities.amount}</h3>
+                        <h6>{identities.place}</h6>
+                        <p>Expires on: {identities.date}</p>
                     </div>
-                    <h4>Expires on:2022-06-03</h4>
+                    <div>
+                        <a href='#'>View More</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="#">View more img</a>
-                </div>
-                </div>
-            </div>
+               </div>
+            ))}
+        </div>
+        <ActivitiesCard/> 
         </div>
     )
 } 

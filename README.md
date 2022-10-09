@@ -1,3 +1,7 @@
+# A traveling website
+
+This is my traveling website by the name Ketravel to make and encourage tourism an experience to remember in form of package.  
+the first process was to create react app as guided below.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +72,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Description
+This project make and encourage tourism an experience to remember in form of package.
+
+Technologies used
+HTML, CSS, JavaScript and React JS
+
+Support and contact details
+My technical mentor is fully credited for this output as she guide me during the whole process of this project where necessary.
+
+License: Licensed under the MIT licence Copyright (c) [@2022] (Joseph Mwangi)

@@ -16,10 +16,10 @@ function Login() {
   console.log("logout")
 }  
 return (
-    <div>
+    <div className="loginsignin">
       <h1>Login</h1>
       <form>
-              <img src="../images/profile.svg" alt="logo"/>
+              <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Ffree-png-xgena&psig=AOvVaw0Xp7vlKE-L-VAJ_yqZZCKd&ust=1665345500050000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCJDZpcm10foCFQAAAAAdAAAAABAJ" alt="logo"/>
               <div>
                 <label><b>Username: </b></label>
                 <input type="text" name="username" placeholder="Username" />
