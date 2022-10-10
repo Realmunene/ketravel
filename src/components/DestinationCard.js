@@ -4,7 +4,7 @@ import ActivitiesCard from './ActivitiesCard';
 function DestinationCard(){
     const [ cardTrip,  setcardTrip] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:3000/CardPackage")
+      fetch("https://ketravelapi1.herokuapp.com/CardPackage")
         .then((response) => response.json())
         .then((data) => {
                 setcardTrip(data);

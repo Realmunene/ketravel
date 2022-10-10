@@ -1,7 +1,8 @@
+import React from 'react';
 import '../Card.css'
 function FooterSection(){
     return(
-        <div>
+        <React.Fragment>
         <div className="footerSec">
             <img src="#" alt="Logo"/>
            <div class = "vertical"></div>
@@ -38,7 +39,7 @@ function FooterSection(){
            <span className='border1'><a>PARTNER WITH US</a></span>
            </div>
 <emp>Copyright 2022 @ Ketravel. All rights reserved.</emp>
-           </div>
+           </React.Fragment>
     )
 } 
 export default FooterSection;
